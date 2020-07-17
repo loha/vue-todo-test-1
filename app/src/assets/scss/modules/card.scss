@@ -1,0 +1,5 @@
+.card {
+  @include defaultBorderRadius;
+  border: 1px solid $default;
+  padding: 1.25rem;
+}

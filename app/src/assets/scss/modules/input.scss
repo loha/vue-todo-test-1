@@ -1,0 +1,15 @@
+input,
+textarea {
+  border: 1px solid $default;
+  padding: 10px 10px;
+}
+
+input {
+  @include defaultInputStyles;
+  height: 30px;
+}
+
+textarea {
+  @include defaultInputStyles;
+  height: 104px;
+}

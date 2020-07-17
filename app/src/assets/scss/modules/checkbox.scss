@@ -1,0 +1,32 @@
+$transition: 0.1s ease-in;
+
+input[type='checkbox'] {
+  position: relative;
+  color: transparent;
+  width: 30px;
+  height: 30px;
+  visibility: hidden;
+}
+
+input[type='checkbox']::before {
+  content: '';
+  visibility: visible;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #ececec;
+  border-radius: 5px;
+  @include transition($transition);
+}
+
+input[type='checkbox']:checked::before {
+  background-color: $success;
+}
+
+input[type='checkbox']:checked::after {
+  @include absoluteCenter;
+
+  content: '\2713';
+  visibility: visible;
+  color: $white;
+}

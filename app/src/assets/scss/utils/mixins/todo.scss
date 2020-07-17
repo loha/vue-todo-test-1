@@ -1,0 +1,18 @@
+@mixin editTodo {
+  .edit-todo,
+  .edit-todo__title,
+  .edit-todo__text,
+  .edit-todo_actions {
+    display: flex;
+  }
+
+  .edit-todo,
+  .edit-todo__title,
+  .edit-todo__text {
+    flex-direction: column;
+  }
+
+  .edit-todo_actions {
+    justify-content: flex-end;
+  }
+}
